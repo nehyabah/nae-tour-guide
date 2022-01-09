@@ -15,7 +15,8 @@ import Rating from "@material-ui/lab/Rating";
 import useStyles from "./styles";
 
 const PlaceDetails = ({ place }) => {
-  const classes = useStyles();
+    const classes = useStyles();
+    console.log(place);
 
   return (
     <Card elevation={6}>
@@ -79,7 +80,7 @@ const PlaceDetails = ({ place }) => {
             gutterBottom
             variant="subtitle2"
             color="textSecondary"
-            className={classes.subtitle}
+            className={classes.spacing}
           >
             <PhoneIcon /> {place.phone}
           </Typography>
